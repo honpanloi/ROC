@@ -21,6 +21,21 @@ public class ArrayUtilClassDemo {
 		Arrays.fill(ar2, 999);
 		
 		System.out.println(Arrays.toString(ar2));
+		
+		/*
+		 *Binary Search - is a searching algorithm which goes by divide and conquer approach.
+		 *Prerequisite to perform Binary search the array should and must be in sorted order(ascending only) 
+		 *How does it start the search?
+		 *1)It starts the seacrch from the mid position of array, if mid element is matching to the search element it will return the (index of the search element)?
+		 *2)lets sat the mid element is greater than search element so now it would do the search on the greater side of the mid element
+		 *else it would do the search again from the smaller side of the mid element
+		 */
+		
+		System.out.println(Arrays.binarySearch(ar, 100));
+		System.out.println(Arrays.binarySearch(ar, 1000));
+		System.out.println(Arrays.binarySearch(ar, 1));
+		System.out.println(Arrays.binarySearch(ar, 2));
+		System.out.println(Arrays.binarySearch(ar, 44));
 
 	}
 
