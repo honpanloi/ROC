@@ -32,6 +32,13 @@ public class ArrayAssignment {
 		System.out.println("The sum of all odd numbers: ");
 		System.out.println(sumAllOddNumber(ar));
 		
+		if(sumAllEvenNumber(ar)>sumAllOddNumber(ar)) {
+			System.out.println("The sum of even number ("+sumAllEvenNumber(ar)+") is bigger");
+		}else {
+			System.out.println("The sum of odd number ("+sumAllOddNumber(ar)+") is bigger");
+		}
+		
+		
 		//Find the minimum and the maximum element in an array
 		System.out.println();
 		findTheMaxAndMin(ar);
