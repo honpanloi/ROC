@@ -1,0 +1,51 @@
+package eg1;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		
+		Map<Integer, String> hm =  new HashMap<>();
+		hm.put(100, "Java");
+		hm.put(100, "openjdk");
+		hm.put(199, "Java");
+		hm.put(300, "Java");
+		hm.put(900, null);
+		hm.put(1000, null);
+		hm.put(22, "Java");
+		hm.put(99, "driver");
+		hm.put(45, null);
+		hm.put(800, "Jee");
+		hm.put(500, "Jse");
+		hm.put(100, "Jee");
+		
+		System.out.println("Map before deletion");
+		System.out.println("hm = "+hm);
+		
+//		for(Entry<Integer, String> e : hm.entrySet()) {
+//			if(e.getValue() == null || e.getKey()%10 ==0) {
+//				hm.remove(e.getKey());
+//			}
+//		}
+		
+		Iterator<Entry<Integer, String>> i = hm.entrySet().iterator(); //list.iterator() set.iterator() queue.iterator()
+		while(i.hasNext()) {
+			Entry<Integer, String> e=i.next(); //read and increment so use it only once in your loop
+			if(e.getValue() == null || e.getKey()%10 ==0) {
+				i.remove();
+			}
+		}
+		
+		System.out.println("Map after deletion");
+		System.out.println("hm = "+hm);
+
+	}
+/*
+ * Enumerator - read operation from top to bottom
+ * Iterat
+ */
+}
