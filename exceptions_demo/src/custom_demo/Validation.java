@@ -1,6 +1,6 @@
 package custom_demo;
 
-public class Validdation {
+public class Validation {
 
 	public boolean isValid(int age) throws InvalidAgeException {
 		
@@ -18,7 +18,7 @@ public class Validdation {
 	public boolean isValidMobileNumber(String mobileNumber) throws BusinessException{
 		
 		if(!mobileNumber.matches("\\+1-[0-9]{10}")) {
-			throw new BusinessException("Entered Mobile Number "+mobileNumber+" is inbalid");
+			throw new BusinessException("Entered Mobile Number "+mobileNumber+" is invalid");
 		}
 		
 		return true;

@@ -3,7 +3,23 @@ package custom_demo;
 public class CustomMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Validation v = new Validation();
+		
+		try {
+			if(v.isValid(40)) {
+				System.out.println("Age Validated");
+			}
+		}catch(InvalidAgeException e){
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			if(v.isValidMobileNumber("+1-3129999999")) {
+				System.out.println("Phone Numver Validated");
+			}
+		}catch(BusinessException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 

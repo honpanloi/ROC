@@ -33,6 +33,6 @@ public class Person {
 	
 	@Override
 	public String toString() {
-		return "Person [ID="+id+" Name"+name+"]";
+		return "Person [ID="+id+" Name="+name+"]";
 	}
 }

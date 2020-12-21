@@ -9,6 +9,7 @@ public class Demo1 {
 
 	public static void main(String[] args) {
 		
+		//remove all k,v pairs whose value is null or whose key is divisible by 10
 		Map<Integer, String> hm =  new HashMap<>();
 		hm.put(100, "Java");
 		hm.put(100, "openjdk");
@@ -46,6 +47,7 @@ public class Demo1 {
 	}
 /*
  * Enumerator - read operation from top to bottom
- * Iterat
+ * Iterator - read and remove operation from top to bottom(any collection)
+ * ListIterator - read, remove, add from any direction but it is only used with List interface
  */
 }
