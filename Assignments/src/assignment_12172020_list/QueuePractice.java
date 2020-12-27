@@ -104,6 +104,16 @@ public class QueuePractice {
 		//It doesn't compare every value in the queue. It uses a tree-based data structure call "heap" to minimize the comparisons required
 		//The difference between a linkedlist queue is that linkedlist is straight up "first in first out"
 		//while PriorityQueue is max or min priority first out, the data got inserted is automatically organized with "heap"
+		
+		System.out.println();
+		System.out.println();
+		System.out.println(sum(1,2));
+		System.out.println(sum(4,5));
+		System.out.println(sum(7,6));
+	}
+	
+	public static int sum(int a, int b) {
+		return a+b;
 	}
 
 }

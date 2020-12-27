@@ -1,5 +1,7 @@
 package eg1;
 
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -16,8 +18,15 @@ public class Demo1 {
 		li1.add(685465L);
 		li1.add(234.456876D);
 		li1.add(434.56f);
+		li1.add(434.56f);
+		li1.add(null);
+		
+		Collections.sort(li1);
 		
 		System.out.println("li1 =" + li1);
+		
+		String s23 = null;
+		System.out.println(s23);
 		
 		List<Integer> li2 = new LinkedList<>();
 		li2.add(2222);

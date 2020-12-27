@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\honpa\Documents\java_examples\myRepo\ROC\week2nAbove\.metadata\.plugins\org.eclipse.jdt.core
+1899114925.index
+4113726307.index
+1951656911.index
+2153156306.index
+4184100833.index

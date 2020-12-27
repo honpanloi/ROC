@@ -1,0 +1,27 @@
+package com.demo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Connection connection = null;
+		
+		try {
+			Class.forName("org.postgresql.Driver");
+			System.out.println("Driver loaded successfully");
+			
+			String url ="jdbc:postgresql://localhost:5432]/[{test1222}]";
+			String usernam = "postgres";
+			String password = "postgres";
+			
+			connection = DriverManager.getConnection(url, usernam, password);
+		} catch (ClassNotFoundException e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

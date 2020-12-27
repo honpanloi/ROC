@@ -6,6 +6,11 @@ public class Demo1 {
 		Integer i1 = 10;
 		Integer i2 = 10;
 		Integer i3 = new Integer(10);
+		String s1 = "10";
+		
+		float f = 1.234;
+		
+		System.out.println("s1.equals(i1) = "+s1.equals(i1));
 		
 		System.out.println(i1==i2);
 		System.out.println(i1==i3);

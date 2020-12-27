@@ -1,4 +1,5 @@
 package eg1;
+import eg2.Address;
 
 public class MobileMain {
 	
