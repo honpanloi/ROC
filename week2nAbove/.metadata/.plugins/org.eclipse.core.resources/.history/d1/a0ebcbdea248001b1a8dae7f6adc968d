@@ -1,0 +1,12 @@
+package com.app.service;
+
+import com.app.exception.BusinessException;
+import com.app.model.Player;
+
+public interface PlayerSearchService {
+	
+	public Player getPlayerById(int id) throws BusinessException;
+	public Player getPlayerbyContact(long contact) throws BusinessException;
+	public List<Player> getAllPlayers() throws BusinessException;
+
+}

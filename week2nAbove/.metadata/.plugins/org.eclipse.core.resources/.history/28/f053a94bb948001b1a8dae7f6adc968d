@@ -1,0 +1,91 @@
+package com.app.main;
+
+import java.util.Scanner;
+
+import com.app.exception.BusinessException;
+import com.app.model.Player;
+import com.app.service.PlayerSearchService;
+import com.app.service.impl.PlayerSearchServiceImpl;
+
+public class PlayerSearchMain {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Welcome to PlayerDearch App V1.0");
+		int ch = 0;
+		
+		PlayerSearchService playerSearchService = new PlayerSearchServiceImpl();
+		
+		do {
+			System.out.println("Player Search Menu");
+			System.out.println("---------------------------------");
+			System.out.println("1) by Id");
+			System.out.println("2) by contact #");
+			System.out.println("3) by Age");
+			System.out.println("4) by Main Weapon");
+			System.out.println("5) by Main Weapon");
+			System.out.println("6) by Team Id");
+			System.out.println("7) by Player Name");
+			System.out.println("8) Show All players");
+			System.out.println("9) Close app");
+			System.out.println("Enter the corresponding number 1-9 to choose a function");
+			
+			try {
+				ch= Integer.parseInt(scanner.nextLine());
+			}catch(NumberFormatException e) {
+				
+			}
+			
+			switch (ch) {
+			case 1:
+				System.out.println("Enter Player Id to get Player details...");
+				try {
+					int id = Integer.parseInt(scanner.nextLine());
+					//code to service layer
+					Player player = playerSearchService.getPlayerById(id);
+					if(player!=null) {
+						System.out.println("Player found with id("+id+")...Details of the player is: \n"+player.toString());
+					}
+				}catch(NumberFormatException e) {
+					System.out.println("Player id cannot be special charactors or symbols or white spaces");
+				} catch (BusinessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				break;
+			case 2:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 3:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 4:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 5:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 6:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 7:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 8:
+				System.out.println("Thank you for your interest. This function is still under construction");
+				break;
+			case 9:
+				System.out.println("Thank you for using our PlayerSearch app v1.0... Have a good one!");
+				break;
+
+			default:
+				System.out.println("Invalid menu option... Please retry");
+				break;
+			}
+			
+		}while(ch!=9);
+
+	}
+
+}

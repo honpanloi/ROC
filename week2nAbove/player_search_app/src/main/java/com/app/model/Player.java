@@ -7,18 +7,22 @@ public class Player {
 	private int team_id;
 	private int main_weapon;
 	private int second_weapon;
+	private int age;
+	private long contact;
 	
 	public Player() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Player(int player_id, String player_name, int team_id, int main_weapon, int second_weapon) {
+	public Player(int player_id, String player_name, int team_id, int main_weapon, int second_weapon, int age, long contact) {
 		super();
 		this.player_id = player_id;
 		this.player_name = player_name;
 		this.team_id = team_id;
 		this.main_weapon = main_weapon;
 		this.second_weapon = second_weapon;
+		this.age = age;
+		this.contact = contact;
 	}
 
 	public int getPlayer_id() {
@@ -61,11 +65,29 @@ public class Player {
 		this.second_weapon = second_weapon;
 	}
 
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public long getContact() {
+		return contact;
+	}
+
+	public void setContact(long contact) {
+		this.contact = contact;
+	}
+
 	@Override
 	public String toString() {
 		return "Player [player_id=" + player_id + ", player_name=" + player_name + ", team_id=" + team_id
-				+ ", main_weapon=" + main_weapon + ", second_weapon=" + second_weapon + "]";
+				+ ", main_weapon=" + main_weapon + ", second_weapon=" + second_weapon + ", age=" + age + ", contact="
+				+ contact + "]";
 	}
+	
 	
 	
 

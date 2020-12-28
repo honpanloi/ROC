@@ -8,11 +8,17 @@
     <fullyQualifiedTypeName name="com.app.dao.dbutil.PostgresqlConnection"/>
     <fullyQualifiedTypeName name="com.app.dao.impl.PlayerCrudDAOimpl"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="com.app.model.Player"/>
-    <fullyQualifiedTypeName name="com.app.exception.BusinessException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="com.app.dao.PlayerSearchDAO"/>
     <fullyQualifiedTypeName name="com.app.dao.impl.PlayerSearchDAOimpl"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="com.app.dao.impl.PlayerSearchDAOImpl"/>
+    <fullyQualifiedTypeName name="com.app.dao.PlayerSearchDAO"/>
+    <fullyQualifiedTypeName name="com.app.service.impl.PlayerSearchServiceImpl"/>
+    <fullyQualifiedTypeName name="com.app.model.Player"/>
+    <fullyQualifiedTypeName name="com.app.validation.Validation"/>
+    <fullyQualifiedTypeName name="com.app.service.PlayerSearchService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.app.exception.BusinessException"/>
 </qualifiedTypeNameHistroy>

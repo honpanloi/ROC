@@ -15,7 +15,7 @@ public class PostgresqlConnection {
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		//Step 1 - load driver
 		Class.forName("org.postgresql.Driver");
-		System.out.println("Driver loaded successfully");
+		
 		//step 2 - open connection(url, username, password)
 		String url ="jdbc:postgresql://localhost:5432/postgres";
 		String username = "postgres";

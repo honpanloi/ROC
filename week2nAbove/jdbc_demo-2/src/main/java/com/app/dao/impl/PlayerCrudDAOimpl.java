@@ -75,23 +75,24 @@ public class PlayerCrudDAOimpl implements PlayerCrudDAO {
 
 	@Override
 	public Player getPlayerById(int id) throws BusinessException {
-		Player output = null;
+		Player player = null;
 		try(Connection connection = PostgresqlConnection.getConnection()){
 			
 			
-			String sql = "select player_name, team_id, main_weapon, second_weapon from test1222.player where player_id =?";
+			String sql = "select player_name, team_id, main_weapon, second_weapon, age, contact from test1222.player where player_id =?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1,id);
 			
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if(resultSet.next()) {
-				output = new Player(); 
-				output.setPlayer_id(id);
-				output.setPlayer_name(resultSet.getString("player_name"));
-				output.setMain_weapon(resultSet.getInt("main_weapon"));
-				output.setSecond_weapon(resultSet.getInt("second_weapon"));
-				output.setAge(resultSet.getInt("age"));
-				output.setContact(resultSet.getInt("contact"));
+				player = new Player(); 
+				player.setPlayer_id(id);
+				player.setPlayer_name(resultSet.getString("player_name"));
+				player.setTeam_id(resultSet.getInt("team_id"));
+				player.setMain_weapon(resultSet.getInt("main_weapon"));
+				player.setSecond_weapon(resultSet.getInt("second_weapon"));
+				player.setAge(resultSet.getInt("age"));
+				player.setContact(resultSet.getLong("contact"));
 				
 			}else {
 				throw new BusinessException("No Player found with Id "+id);
@@ -101,7 +102,7 @@ public class PlayerCrudDAOimpl implements PlayerCrudDAO {
 			
 			throw new BusinessException("Internal error occured contact sysadmin");
 		}
-		return output;
+		return player;
 	}
 
 	@Override

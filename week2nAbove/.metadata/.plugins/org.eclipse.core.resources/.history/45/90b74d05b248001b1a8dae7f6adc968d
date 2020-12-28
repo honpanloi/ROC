@@ -1,0 +1,95 @@
+package com.app.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.app.dao.PlayerSearchDAO;
+import com.app.dao.dbutil.PostgresqlConnection;
+import com.app.exception.BusinessException;
+import com.app.model.Player;
+
+public class PlayerSearchDAOImpl implements PlayerSearchDAO{
+
+	@Override
+	public Player getPlayerById(int id) throws BusinessException {
+		Player player = null;
+		try(Connection connection = PostgresqlConnection.getConnection()){
+			
+			
+			String sql = "select player_name, team_id, main_weapon, second_weapon from test1222.player where player_id =?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1,id);
+			
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				player = new Player(); 
+				player.setPlayer_id(id);
+				player.setPlayer_name(resultSet.getString("player_name"));
+				player.setMain_weapon(resultSet.getInt("main_weapon"));
+				player.setSecond_weapon(resultSet.getInt("second_weapon"));
+				player.setAge(resultSet.getInt("age"));
+				player.setContact(resultSet.getInt("contact"));
+				
+			}else {
+				throw new BusinessException("No Player found with Id "+id);
+			}
+			
+		}catch (ClassNotFoundException | SQLException e) {
+			
+			throw new BusinessException("Internal error occured contact sysadmin");
+		}
+		return player;
+	}
+
+	@Override
+	public Player getPlayerbyContact(long contact) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayers() throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersByAge(int age) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersByGender(String gender) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersByTeamId(int teamId) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersByName(String name) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersByMainWeaponId(int mainWeaponId) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Player> getAllPlayersBySecondWeaponId(int SecondWeaponId) throws BusinessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

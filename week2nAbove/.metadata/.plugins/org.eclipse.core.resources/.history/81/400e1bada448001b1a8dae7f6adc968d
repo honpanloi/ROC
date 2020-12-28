@@ -1,0 +1,28 @@
+package com.app.main;
+
+import java.util.Scanner;
+
+public class PlayerSearchMain {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Welcome to PlayerDearch App V1.0");
+		int ch = 0;
+		do {
+			System.out.println("Player Search Menu");
+			System.out.println("---------------------------------");
+			System.out.println("1) by Id");
+			System.out.println("2) by contact #");
+			System.out.println("3) by Age");
+			System.out.println("4) by Main Weapon");
+			System.out.println("5) by Main Weapon");
+			System.out.println("6) by Team Id");
+			System.out.println("7) by Player Name");
+			System.out.println("8) Show All players");
+			System.out.println("9) Close app");
+		}while(ch!=9);
+
+	}
+
+}
