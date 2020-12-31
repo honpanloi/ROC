@@ -27,7 +27,7 @@ public class PlayerMain {
 //		}
 //		
 		try {
-			Player player = dao.getPlayerById(1001);
+			Player player = dao.getPlayerById(1009);
 			
 			if(player!=null) {
 				System.out.println("Details of player with id "+player.getPlayer_id());
@@ -52,7 +52,7 @@ public class PlayerMain {
 		
 //		try {
 //			dao.deletePlayerById(1009);
-//			System.out.println("player "+1009+" is delete");
+//			System.out.println("player "+1009+" is deleted");
 //		} catch (BusinessException e) {
 //			System.out.println(e.getMessage());
 //		}

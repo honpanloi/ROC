@@ -1,0 +1,28 @@
+30-Dec-2020 Wednesday CST 18:06:07	{DEBUG}	com.app.main.Main	
+Hello from DEBUG
+30-Dec-2020 Wednesday CST 18:06:07	{INFO}	com.app.main.Main	
+Hello from INFO
+30-Dec-2020 Wednesday CST 18:06:07	{WARN}	com.app.main.Main	
+Hello from WARN
+30-Dec-2020 Wednesday CST 18:06:07	{ERROR}	com.app.main.Main	
+Hello from ERROR
+30-Dec-2020 Wednesday CST 18:06:07	{FATAL}	com.app.main.Main	
+Hello from FATAL
+30-Dec-2020 Wednesday CST 18:06:07	{INFO}	com.app.service.HelloLogService	
+Hello from log service helloLog();
+30-Dec-2020 Wednesday CST 18:06:07	{INFO}	com.app.service.HelloLogService	
+Bye bye from log service helloLog();
+Dec-30-2020 Wednesday CST 18:06:57	{DEBUG}	com.app.main.Main	
+Hello from DEBUG
+Dec-30-2020 Wednesday CST 18:06:57	{INFO}	com.app.main.Main	
+Hello from INFO
+Dec-30-2020 Wednesday CST 18:06:57	{WARN}	com.app.main.Main	
+Hello from WARN
+Dec-30-2020 Wednesday CST 18:06:57	{ERROR}	com.app.main.Main	
+Hello from ERROR
+Dec-30-2020 Wednesday CST 18:06:57	{FATAL}	com.app.main.Main	
+Hello from FATAL
+Dec-30-2020 Wednesday CST 18:06:57	{INFO}	com.app.service.HelloLogService	
+Hello from log service helloLog();
+Dec-30-2020 Wednesday CST 18:06:57	{INFO}	com.app.service.HelloLogService	
+Bye bye from log service helloLog();
