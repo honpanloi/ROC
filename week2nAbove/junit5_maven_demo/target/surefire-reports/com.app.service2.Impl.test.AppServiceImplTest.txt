@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.app.service2.Impl.test.AppServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.app.service2.Impl.test.AppServiceImplTest
+testIsValidMobileNumberForNull  Time elapsed: 0.006 s  <<< ERROR!
+java.util.regex.PatternSyntaxException: 
+Dangling meta character '+' near index 0
++1-[0-9]{10}
+^
+	at com.app.service2.Impl.test.AppServiceImplTest.testIsValidMobileNumberForNull(AppServiceImplTest.java:43)
+
+testIsValidMobileNumberForTrue  Time elapsed: 0 s  <<< ERROR!
+java.util.regex.PatternSyntaxException: 
+Dangling meta character '+' near index 0
++1-[0-9]{10}
+^
+	at com.app.service2.Impl.test.AppServiceImplTest.testIsValidMobileNumberForTrue(AppServiceImplTest.java:38)
+

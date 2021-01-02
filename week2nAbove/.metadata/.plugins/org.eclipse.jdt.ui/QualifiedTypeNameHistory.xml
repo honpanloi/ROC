@@ -21,4 +21,7 @@
     <fullyQualifiedTypeName name="com.app.service.PlayerSearchService"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.app.exception.BusinessException"/>
+    <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.log4j.BasicConfigurator"/>
+    <fullyQualifiedTypeName name="com.app.service.HelloLogService"/>
 </qualifiedTypeNameHistroy>
