@@ -8,7 +8,9 @@ public class Demo1 {
 		Integer i3 = new Integer(10);
 		String s1 = "10";
 		
-		float f = 1.234;
+		String a = "a";
+		addString(a);
+		System.out.println(a);
 		
 		System.out.println("s1.equals(i1) = "+s1.equals(i1));
 		
@@ -45,6 +47,10 @@ public class Demo1 {
 		System.out.println("i5.compareTo(1000): " + i5.compareTo(1000));
 		System.out.println("i5.compareTo(2000): " + i5.compareTo(2000));
 		System.out.println("i5.compareTo(100): " + i5.compareTo(100));
+	}
+	
+	public static void addString(String s) {
+		s = s + "add";
 	}
 
 }

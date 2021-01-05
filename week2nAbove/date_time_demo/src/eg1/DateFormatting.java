@@ -6,6 +6,11 @@ import java.util.Date;
 public class DateFormatting {
 
 	public static void main(String[] args) {
+		
+		for (int i = 0; i < args.length; i++) {
+			System.out.println(args.toString()+"hi");
+		}
+		
 		Date d = new Date(); 
 		System.out.println(d);
 		/*
