@@ -9956,3 +9956,18 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-07 15:23:17.106
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 17:38:54.772
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 17:38:54.774
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 17:38:54.774
+!MESSAGE buffering callback sts4.classpath.dkSjUaZv multithreads_demo false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 17:38:54.775
+!MESSAGE executing callback sts4.classpath.dkSjUaZv 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-07 17:38:54.778
+!MESSAGE executing callback sts4.classpath.dkSjUaZv SUCCESS [done]
