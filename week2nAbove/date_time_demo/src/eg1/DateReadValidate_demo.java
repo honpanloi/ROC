@@ -8,7 +8,7 @@ public class DateReadValidate_demo {
 
 	public static void main(String[] args) {
 		
-		String s = "1.1.11"; //dd.MM.yyyy
+		String s = "13.04.1990";
 		if(s.matches("[0-9]{2}.[0-9]{2}.[0-9]{4}")) {
 			SimpleDateFormat sdf = new SimpleDateFormat("MM.dd.yyyy");
 			sdf.setLenient(false);

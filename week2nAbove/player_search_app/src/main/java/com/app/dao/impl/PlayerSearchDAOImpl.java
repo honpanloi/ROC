@@ -80,7 +80,7 @@ public class PlayerSearchDAOImpl implements PlayerSearchDAO{
 
 	@Override
 	public List<Player> getAllPlayers() throws BusinessException {
-List<Player> playerList =  new ArrayList<Player>();
+		List<Player> playerList =  new ArrayList<Player>();
 		
 		try(Connection connection = PostgresqlConnection.getConnection()){
 			

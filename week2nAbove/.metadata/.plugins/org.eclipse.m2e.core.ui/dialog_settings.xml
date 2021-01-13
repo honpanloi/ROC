@@ -44,16 +44,19 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.mockito"/>
 			<item value="com.app"/>
 			<item value="com.demo"/>
 		</list>
 		<list key="name">
+			<item value="MockitdoJunit"/>
 			<item value="junit5_maven_demo"/>
 			<item value="player_search_app"/>
 			<item value="jdbc_demo_2"/>
 			<item value="jdbc_demo_1"/>
 		</list>
 		<list key="artifactId">
+			<item value="MockitdoJunit"/>
 			<item value="junit5_maven_demo"/>
 			<item value="player_search_app"/>
 			<item value="jdbc_demo-2"/>
